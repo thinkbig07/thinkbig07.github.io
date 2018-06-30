@@ -1,0 +1,999 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="TesterTalk --爬虫实践">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://qahome.cn">
+    <!--SEO-->
+
+<meta name="description" content="这是一个由爬虫自动生成并维护的网站。"/>
+
+
+
+<meta name="keywords" content="爬虫， 自动生成的博客。"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>TesterTalk --爬虫实践</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="TesterTalk --爬虫实践" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='TesterTalk'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/今日热点/"><i class="fa "></i>今日热点</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/科技/"><i class="fa "></i>科技</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/酷软推荐/"><i class="fa "></i>酷软推荐</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/深度解读/"><i class="fa "></i>深度解读</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/思维训练/"><i class="fa "></i>思维训练</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/优秀博客/"><i class="fa "></i>优秀博客</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content ">
+                    <div class="carousel">
+    <!-- <img src="/img/head-img.jpg"> -->
+</div>
+
+
+
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/11/大误 · 开灯后，蚊子都藏去哪儿了？/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://pic1.zhimg.com/70/ad93fbb365a6df4c6596ec6c4fbdc990_b.jpg"   alt="大误 · 开灯后，蚊子都藏去哪儿了？">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/11/大误 · 开灯后，蚊子都藏去哪儿了？/">大误 · 开灯后，蚊子都藏去哪儿了？</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月11日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                身为多次因为感觉蚊子在耳边嗡嗡而怒扇自己耳光的人，我表示这个问题问得真心有水平。其实这是「薛定谔的蚊子」，不要开灯，蚊子会在你观察的瞬间坍缩。只要跟我一样，紧闭双目，以听觉和「心眼」判断蚊子所处的大概位置，随后用力扇自己就好了。只要手...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/11/大误 · 开灯后，蚊子都藏去哪儿了？/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/11/「若饭」粉末瓶装版团购还有最有一天/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="https://img3.appinn.com/images/201806/_mg_8187.jpg!o"   alt="「若饭」粉末瓶装版团购还有最有一天">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/11/「若饭」粉末瓶装版团购还有最有一天/">「若饭」粉末瓶装版团购还有最有一天</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月11日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                掐指一算，「若饭」粉末瓶装版团购还剩最后一天了，之后的价格就要恢复，想体验的抓紧时间。呃，其实不是真的掐指算了，是碰到了些意外…青小蛙有家人在周六的时候拔了牙，因为位置原因缝针了，拔过牙的同学肯定知道如果缝针，那嘴巴几天内就悲剧了。于...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/酷软推荐">
+            酷软推荐
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/小众软件" title='小众软件'>
+                        小众软件
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/11/「若饭」粉末瓶装版团购还有最有一天/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/11/那年我高考 · 后来我成了监考老师/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="/img/head-img.jpg"   alt="那年我高考 · 后来我成了监考老师">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/11/那年我高考 · 后来我成了监考老师/">那年我高考 · 后来我成了监考老师</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月11日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                提起高考，你会想起什么？在那年那场考试之后，虽然我们跟着生活渐行渐远，但许多事，依然会在每年的这个时候，成为一个悄无声息浮上我们心头的气泡。又到一年高考时。近一周，「高考这件小事儿」专题每天和你分享一篇关于高考的回忆。经历高考的人年年...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/11/那年我高考 · 后来我成了监考老师/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/10/极像素：超高像素看世界 – 20 个 800 亿像素 360 度全景摄影/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="https://img3.appinn.com/images/201806/2018-06-10-1-54-51.jpg!o"   alt="极像素：超高像素看世界 – 20 个 800 亿像素 360 度全景摄影">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/10/极像素：超高像素看世界 – 20 个 800 亿像素 360 度全景摄影/">极像素：超高像素看世界 – 20 个 800 亿像素 360 度全景摄影</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月10日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                极像素：超高像素看世界 是一个超高清全景摄影网站，目前已经有了 20 个 800 亿像素的 360 度全景摄影照片。@Appinn超高清全景照片的吸引力还是蛮强的。极像素 目前拥有以下一些作品：
+
+800 亿像素广州
+828 亿像素哈...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/酷软推荐">
+            酷软推荐
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/小众软件" title='小众软件'>
+                        小众软件
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/10/极像素：超高像素看世界 – 20 个 800 亿像素 360 度全景摄影/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/09/自媒体人的线下聚会/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="/img/head-img.jpg"   alt="自媒体人的线下聚会">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/09/自媒体人的线下聚会/">自媒体人的线下聚会</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月09日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                自媒体人线下聚会很有意思，你会发现：做美妆号的是抠脚大叔;做亲子号的是90后单身狗;写小黄文的是萌妹纸;每天发萌妹子图片的号是肥宅办的;拍土味情话短视频的是都市文艺青年;连载文艺小说的是职场精英;提供职场鸡汤的是刚毕业的MBA。来源：...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/深度解读">
+            深度解读
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/卢松松博客" title='卢松松博客'>
+                        卢松松博客
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/09/自媒体人的线下聚会/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/09/轰动微博的“崔永元范冰冰”事件中的为人哲学/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="/img/head-img.jpg"   alt="轰动微博的“崔永元范冰冰”事件中的为人哲学">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/09/轰动微博的“崔永元范冰冰”事件中的为人哲学/">轰动微博的“崔永元范冰冰”事件中的为人哲学</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月09日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                
+引言：知乎账号“李海”高赞答案，崔永元范冰冰事件中的为人哲学。
+
+1.不要跟价值观不同的人做朋友。人在社会的一生会遇到很多人，但不是每个人都能为朋友。如何分辨呢，最基本的一条，价值观。崔永元把自己的名节看得很重，而且15年过去，人家...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/深度解读">
+            深度解读
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/卢松松博客" title='卢松松博客'>
+                        卢松松博客
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/09/轰动微博的“崔永元范冰冰”事件中的为人哲学/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/09/银保监会严控自媒体营销/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://images.lusongsong.com/zb_users/upload/2018/06/201806092051_762.jpg"   alt="银保监会严控自媒体营销">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/09/银保监会严控自媒体营销/">银保监会严控自媒体营销</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月09日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                波及朋友圈的自媒体营销将被列入史上监管了，自6月初，这份名为《关于加强自媒体保险营销宣传行为管理的通知》下发发布后，银保监会对网站、博客、微博、公众号和朋友圈都将纳入监管范围。由于入门槛低、速度快，自媒体愈发成为保险机构和从业人员展示...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/深度解读">
+            深度解读
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/卢松松博客" title='卢松松博客'>
+                        卢松松博客
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/09/银保监会严控自媒体营销/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/08/连高考作文都让我写「被需要」，怎么觉得有点扎心/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://pic4.zhimg.com/70/v2-97ebf6610a8d3643ff8695d84ff06e0b_b.jpg"   alt="连高考作文都让我写「被需要」，怎么觉得有点扎心">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/08/连高考作文都让我写「被需要」，怎么觉得有点扎心/">连高考作文都让我写「被需要」，怎么觉得有点扎心</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月08日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                这届高考，KY 办公室里也很热闹，各省作文题目更是成了编辑部小伙伴们讨论的焦点。看了各省市的高考语文作文题，不禁要为上海的题点赞。这个题目非常切实，也和心理学有不小的关系。几乎人人都渴望“被需要”，但我们应该在多大的程度上去满足这种需...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/08/连高考作文都让我写「被需要」，怎么觉得有点扎心/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/08/从选址到货架摆放，全方位分析，在绝地求生里怎么开发房地产/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://pic2.zhimg.com/70/v2-92c0df0ec5b41d496bafb63710d0858d_b.jpg"   alt="从选址到货架摆放，全方位分析，在绝地求生里怎么开发房地产">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/08/从选址到货架摆放，全方位分析，在绝地求生里怎么开发房地产/">从选址到货架摆放，全方位分析，在绝地求生里怎么开发房地产</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月08日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                发现大家的回答很有趣，代表性回答如下述：
+
+又有核电站又有军事基地，并不宜居，不考虑
+从交通、学区、经济、社会等等因素分析，最后划定一个区域
+整个岛就只有 100 人口，没有投资价值等等（注：问题其实默认了《绝地求生》指的是国内腾讯运...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/08/从选址到货架摆放，全方位分析，在绝地求生里怎么开发房地产/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/08/拍给儿童，也拍给童心/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="/img/head-img.jpg"   alt="拍给儿童，也拍给童心">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/08/拍给儿童，也拍给童心/">拍给儿童，也拍给童心</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月08日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                烂番茄新鲜度 100%，法国凯撒奖最佳动画长片，法国卢米埃尔电影奖最佳动画片，奥斯卡最佳动画长片初选入围…这一长串荣誉全都归属一部看似低幼的手绘动画片，它同样拥有着一个看似“幼稚”的名字——《大坏狐狸的故事》。《大坏狐狸的故事》改编自...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/08/拍给儿童，也拍给童心/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+
+
+    <nav class="pagination" role="navigation">
+        <div id="page-nav">
+            <a class="extend prev" rel="prev" href="/page/21/"><i class='fa fa-angle-left'></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><a class="page-number" href="/page/24/">24</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/23/"><i class='fa fa-angle-right'></i></a>
+        </div>
+    </nav>
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">Search</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p><b>本站一切内容摘自网络，完全由爬虫自动生成，维护，本站目的为了学以致用，如所发布文章侵犯了您的权益，请联系公众号 TesterTalk.</b> <br/>
+</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/Light07/autoblog.git" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="//www.zhihu.com/people/thinkbig" rel="external nofollow" title="知乎" target="_blank">
+			    	<i class="user fa fa-user"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/今日热点/"><i class="fa" aria-hidden="true">今日热点</i></a><span class="category-list-count">199</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/优秀博客/"><i class="fa" aria-hidden="true">优秀博客</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思维训练/"><i class="fa" aria-hidden="true">思维训练</i></a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度解读/"><i class="fa" aria-hidden="true">深度解读</i></a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科技/"><i class="fa" aria-hidden="true">科技</i></a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/酷软推荐/"><i class="fa" aria-hidden="true">酷软推荐</i></a><span class="category-list-count">24</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">June 2018</i></a><span class="archive-list-count">265</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">May 2018</i></a><span class="archive-list-count">4</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">Tag Cloud</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/卢松松博客/" style="font-size: 18px;">卢松松博客</a> <a href="/tags/小众软件/" style="font-size: 16px;">小众软件</a> <a href="/tags/战隼的学习探索/" style="font-size: 12px;">战隼的学习探索</a> <a href="/tags/知乎日报/" style="font-size: 20px;">知乎日报</a> <a href="/tags/酷-壳-–-CoolShell/" style="font-size: 10px;">酷 壳 – CoolShell</a> <a href="/tags/雷锋网/" style="font-size: 14px;">雷锋网</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.helloqa.com" class="fa" target="_blank">TesterTalk软件测试分享</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,992 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="TesterTalk --爬虫实践">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://qahome.cn">
+    <!--SEO-->
+
+<meta name="description" content="这是一个由爬虫自动生成并维护的网站。"/>
+
+
+
+<meta name="keywords" content="爬虫， 自动生成的博客。"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>TesterTalk --爬虫实践</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="TesterTalk --爬虫实践" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='TesterTalk'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/今日热点/"><i class="fa "></i>今日热点</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/科技/"><i class="fa "></i>科技</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/酷软推荐/"><i class="fa "></i>酷软推荐</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/深度解读/"><i class="fa "></i>深度解读</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/思维训练/"><i class="fa "></i>思维训练</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/优秀博客/"><i class="fa "></i>优秀博客</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content ">
+                    <div class="carousel">
+    <!-- <img src="/img/head-img.jpg"> -->
+</div>
+
+
+
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/报个好志愿 · 去北方上大学怎么样？/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://www.zhihu.com/equation?tex=%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B2%7D%7B5%7D%5Cfrac%7B2%7D%7B7%7D+%2B%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B2%7D%7B7%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B1%7D%7B3%7D%28%5Cfrac%7B3%7D%7B8%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B5%7D%7B8%7D%5Cfrac%7B2%7D%7B7%7D%29%5Capprox+0.1857+%3C+0.2"   alt="报个好志愿 · 去北方上大学怎么样？">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/报个好志愿 · 去北方上大学怎么样？/">报个好志愿 · 去北方上大学怎么样？</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                组队的核心权衡是：团队作战能力的提高和隔岸观火可能性的减少。直观上来说，组队之后，以团队对抗个人，自然胜算提高了不少。这是组队的优势；但是组队之后，就要一起面对强大的对手，而无法坐观成败，这是组队的劣势。因为选择组队或者不组队是每个人...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/报个好志愿 · 去北方上大学怎么样？/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/可惜当年没听过这些句子，不然一定用作毕业寄语送给某人/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://www.zhihu.com/equation?tex=%5Cfrac%7B1%7D%7B2%7D%5Cfrac%7B2%7D%7B5%7D%5Cfrac%7B2%7D%7B7%7D+%2B%5Cfrac%7B1%7D%7B2%7D%28%5Cfrac%7B3%7D%7B8%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B5%7D%7B8%7D%5Cfrac%7B2%7D%7B7%7D%29+%5Capprox+0.22+%3E+0.2"   alt="可惜当年没听过这些句子，不然一定用作毕业寄语送给某人">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/可惜当年没听过这些句子，不然一定用作毕业寄语送给某人/">可惜当年没听过这些句子，不然一定用作毕业寄语送给某人</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                组队的核心权衡是：团队作战能力的提高和隔岸观火可能性的减少。直观上来说，组队之后，以团队对抗个人，自然胜算提高了不少。这是组队的优势；但是组队之后，就要一起面对强大的对手，而无法坐观成败，这是组队的劣势。因为选择组队或者不组队是每个人...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/可惜当年没听过这些句子，不然一定用作毕业寄语送给某人/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/靴子落地！央行正式《通知》要求全额上收支付机构客户备付金/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="/img/head-img.jpg"   alt="靴子落地！央行正式《通知》要求全额上收支付机构客户备付金">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/靴子落地！央行正式《通知》要求全额上收支付机构客户备付金/">靴子落地！央行正式《通知》要求全额上收支付机构客户备付金</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                “”原文请参见: http://cn.engadget.com/2018/06/29/amazon-buys-pillpack-healthcare-online-pharmacy/ 
+
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/科技">
+            科技
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/雷锋网" title='雷锋网'>
+                        雷锋网
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/靴子落地！央行正式《通知》要求全额上收支付机构客户备付金/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/瞎扯 · 如何正确地吐槽/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://www.zhihu.com/equation?tex=%5Cfrac%7B1%7D%7B2%7D%5Cfrac%7B3%7D%7B5%7D%5Cfrac%7B3%7D%7B8%7D+%2B%5Cfrac%7B1%7D%7B2%7D%28%5Cfrac%7B2%7D%7B7%7D%5Cfrac%7B3%7D%7B5%7D%2B%5Cfrac%7B5%7D%7B7%7D%5Cfrac%7B3%7D%7B8%7D%29%5Capprox+0.33+%3E+0.3"   alt="瞎扯 · 如何正确地吐槽">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/瞎扯 · 如何正确地吐槽/">瞎扯 · 如何正确地吐槽</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                组队的核心权衡是：团队作战能力的提高和隔岸观火可能性的减少。直观上来说，组队之后，以团队对抗个人，自然胜算提高了不少。这是组队的优势；但是组队之后，就要一起面对强大的对手，而无法坐观成败，这是组队的劣势。因为选择组队或者不组队是每个人...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/瞎扯 · 如何正确地吐槽/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/大误 · 再也无法直视世界杯的 logo 了/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://www.zhihu.com/equation?tex=%5Cfrac%7B1%7D%7B2%7D%5Cfrac%7B2%7D%7B5%7D%5Cfrac%7B2%7D%7B7%7D+%2B%5Cfrac%7B1%7D%7B2%7D%28%5Cfrac%7B3%7D%7B8%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B5%7D%7B8%7D%5Cfrac%7B2%7D%7B7%7D%29+%5Capprox+0.22+%3E+0.2"   alt="大误 · 再也无法直视世界杯的 logo 了">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/大误 · 再也无法直视世界杯的 logo 了/">大误 · 再也无法直视世界杯的 logo 了</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                组队的核心权衡是：团队作战能力的提高和隔岸观火可能性的减少。直观上来说，组队之后，以团队对抗个人，自然胜算提高了不少。这是组队的优势；但是组队之后，就要一起面对强大的对手，而无法坐观成败，这是组队的劣势。因为选择组队或者不组队是每个人...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/大误 · 再也无法直视世界杯的 logo 了/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/今天，人工智能在 CCF-GAIR 大会上迎来高光时刻 - CCF-GAIR 2018/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="/img/head-img.jpg"   alt="今天，人工智能在 CCF-GAIR 大会上迎来高光时刻 | CCF-GAIR 2018">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/今天，人工智能在 CCF-GAIR 大会上迎来高光时刻 - CCF-GAIR 2018/">今天，人工智能在 CCF-GAIR 大会上迎来高光时刻 | CCF-GAIR 2018</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                “”原文请参见: http://cn.engadget.com/2018/06/29/amazon-buys-pillpack-healthcare-online-pharmacy/ 
+
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/科技">
+            科技
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/雷锋网" title='雷锋网'>
+                        雷锋网
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/今天，人工智能在 CCF-GAIR 大会上迎来高光时刻 - CCF-GAIR 2018/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/酷哇机器人首席科学家Rolf Pfeifer：机器人-AI技术过热未必是坏事 - CCF-GAIR 2018/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="/img/head-img.jpg"   alt="酷哇机器人首席科学家Rolf Pfeifer：机器人/AI技术过热未必是坏事 | CCF-GAIR 2018">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/酷哇机器人首席科学家Rolf Pfeifer：机器人-AI技术过热未必是坏事 - CCF-GAIR 2018/">酷哇机器人首席科学家Rolf Pfeifer：机器人/AI技术过热未必是坏事 | CCF-GAIR 2018</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                “”原文请参见: http://cn.engadget.com/2018/06/29/amazon-buys-pillpack-healthcare-online-pharmacy/ 
+
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/科技">
+            科技
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/雷锋网" title='雷锋网'>
+                        雷锋网
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/酷哇机器人首席科学家Rolf Pfeifer：机器人-AI技术过热未必是坏事 - CCF-GAIR 2018/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/中国的法官为什么不用惊堂木，也学西方用「锤子」了？/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://www.zhihu.com/equation?tex=%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B2%7D%7B5%7D%5Cfrac%7B2%7D%7B7%7D+%2B%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B2%7D%7B7%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B1%7D%7B3%7D%28%5Cfrac%7B3%7D%7B8%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B5%7D%7B8%7D%5Cfrac%7B2%7D%7B7%7D%29%5Capprox+0.1857+%3C+0.2"   alt="中国的法官为什么不用惊堂木，也学西方用「锤子」了？">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/中国的法官为什么不用惊堂木，也学西方用「锤子」了？/">中国的法官为什么不用惊堂木，也学西方用「锤子」了？</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                组队的核心权衡是：团队作战能力的提高和隔岸观火可能性的减少。直观上来说，组队之后，以团队对抗个人，自然胜算提高了不少。这是组队的优势；但是组队之后，就要一起面对强大的对手，而无法坐观成败，这是组队的劣势。因为选择组队或者不组队是每个人...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/中国的法官为什么不用惊堂木，也学西方用「锤子」了？/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/小时候很讨厌林平之，长大后才发现，生活的真相就是他悲剧的一生/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://www.zhihu.com/equation?tex=%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B3%7D%7B5%7D%5Cfrac%7B3%7D%7B8%7D+%2B%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B3%7D%7B8%7D%5Cfrac%7B3%7D%7B5%7D%2B%5Cfrac%7B1%7D%7B3%7D%28%5Cfrac%7B2%7D%7B7%7D%5Cfrac%7B3%7D%7B5%7D%2B%5Cfrac%7B5%7D%7B7%7D%5Cfrac%7B3%7D%7B8%7D%29%5Capprox+0.2964+%3C+0.3"   alt="小时候很讨厌林平之，长大后才发现，生活的真相就是他悲剧的一生">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/小时候很讨厌林平之，长大后才发现，生活的真相就是他悲剧的一生/">小时候很讨厌林平之，长大后才发现，生活的真相就是他悲剧的一生</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                组队的核心权衡是：团队作战能力的提高和隔岸观火可能性的减少。直观上来说，组队之后，以团队对抗个人，自然胜算提高了不少。这是组队的优势；但是组队之后，就要一起面对强大的对手，而无法坐观成败，这是组队的劣势。因为选择组队或者不组队是每个人...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/小时候很讨厌林平之，长大后才发现，生活的真相就是他悲剧的一生/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+ 
+
+<article class="post">
+    
+        <div class="post-media">
+            <a href="/2018/06/30/在古代不准杀牛吃，那老死的牛怎么办？/">
+                <img class="img-ajax" src="/img/loading.gif"  data-src="http://www.zhihu.com/equation?tex=%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B2%7D%7B5%7D%5Cfrac%7B2%7D%7B7%7D+%2B%5Cfrac%7B1%7D%7B3%7D%5Cfrac%7B2%7D%7B7%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B1%7D%7B3%7D%28%5Cfrac%7B3%7D%7B8%7D%5Cfrac%7B2%7D%7B5%7D%2B%5Cfrac%7B5%7D%7B8%7D%5Cfrac%7B2%7D%7B7%7D%29%5Capprox+0.1857+%3C+0.2"   alt="在古代不准杀牛吃，那老死的牛怎么办？">
+            </a>
+        </div>
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/2018/06/30/在古代不准杀牛吃，那老死的牛怎么办？/">在古代不准杀牛吃，那老死的牛怎么办？</a>
+            </h1>
+            <div class="post-meta">  &bull;
+                <time class="post-date" datetime="" title="">
+                    2018年06月30日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+                组队的核心权衡是：团队作战能力的提高和隔岸观火可能性的减少。直观上来说，组队之后，以团队对抗个人，自然胜算提高了不少。这是组队的优势；但是组队之后，就要一起面对强大的对手，而无法坐观成败，这是组队的劣势。因为选择组队或者不组队是每个人...
+            
+        </p>
+    </div>
+    
+        <footer class="post-footer clearfix">
+            <div class="pull-left tag-list">
+                <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+</div>
+
+            </div>
+
+            <div class="post-permalink">
+                <a href="/2018/06/30/在古代不准杀牛吃，那老死的牛怎么办？/" class="btn btn-default">阅读全文</a>
+            </div>
+        </footer>
+    
+</article>
+
+
+
+
+    <nav class="pagination" role="navigation">
+        <div id="page-nav">
+            <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/2/"><i class='fa fa-angle-right'></i></a>
+        </div>
+    </nav>
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">Search</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p><b>本站一切内容摘自网络，完全由爬虫自动生成，维护，本站目的为了学以致用，如所发布文章侵犯了您的权益，请联系公众号 TesterTalk.</b> <br/>
+</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/Light07/autoblog.git" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="//www.zhihu.com/people/thinkbig" rel="external nofollow" title="知乎" target="_blank">
+			    	<i class="user fa fa-user"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/今日热点/"><i class="fa" aria-hidden="true">今日热点</i></a><span class="category-list-count">199</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/优秀博客/"><i class="fa" aria-hidden="true">优秀博客</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思维训练/"><i class="fa" aria-hidden="true">思维训练</i></a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度解读/"><i class="fa" aria-hidden="true">深度解读</i></a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科技/"><i class="fa" aria-hidden="true">科技</i></a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/酷软推荐/"><i class="fa" aria-hidden="true">酷软推荐</i></a><span class="category-list-count">24</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">June 2018</i></a><span class="archive-list-count">265</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">May 2018</i></a><span class="archive-list-count">4</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">Tag Cloud</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/卢松松博客/" style="font-size: 18px;">卢松松博客</a> <a href="/tags/小众软件/" style="font-size: 16px;">小众软件</a> <a href="/tags/战隼的学习探索/" style="font-size: 12px;">战隼的学习探索</a> <a href="/tags/知乎日报/" style="font-size: 20px;">知乎日报</a> <a href="/tags/酷-壳-–-CoolShell/" style="font-size: 10px;">酷 壳 – CoolShell</a> <a href="/tags/雷锋网/" style="font-size: 14px;">雷锋网</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.helloqa.com" class="fa" target="_blank">TesterTalk软件测试分享</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>

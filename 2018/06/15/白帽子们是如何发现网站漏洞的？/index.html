@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="TesterTalk --爬虫实践">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://qahome.cn">
+    <!--SEO-->
+
+<meta name="description" content="这是一个由爬虫自动生成并维护的网站。"/>
+
+
+
+<meta name="keywords" content="爬虫， 自动生成的博客。"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>白帽子们是如何发现网站漏洞的？ | TesterTalk --爬虫实践</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="TesterTalk --爬虫实践" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='TesterTalk'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/今日热点/"><i class="fa "></i>今日热点</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/科技/"><i class="fa "></i>科技</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/酷软推荐/"><i class="fa "></i>酷软推荐</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/深度解读/"><i class="fa "></i>深度解读</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/思维训练/"><i class="fa "></i>思维训练</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/优秀博客/"><i class="fa "></i>优秀博客</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="白帽子们是如何发现网站漏洞的？">
+            
+	            白帽子们是如何发现网站漏洞的？
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2018/06/15</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>漏洞的挖掘一般需要 90% 的技巧和 10% 的运气的。<br>先举个运气的例子：<br>我上大学的时候，有个很火的网站叫校内网（后来改名叫人人网了，也不火了） 。校内网在发展最鼎盛时期开发了一款软件叫校内通。<br>某一次在校内网上各种远观各个大学的女神时，无意间看到他们出的校内通这么个新东西，就下载安装了。然后就发现当访问校内网时，校内通可以被自动运行。当然这是 ActiveX 的功劳，也没什么大不了。<br>但有意思的是访问网页后自动运行起来的校内通居然是自动登录的，这引起了我的兴趣。于是我在 logout 情况下、删除配置文件情况下、在虚拟机中运行等情况下均做了尝试。得出结论：在本机不提供密码，仅访问登录后的校内网网页后，校内通实现了自动登录。(说实话，当年 QQ 都没这么干过)<br>当然现在来看，其实这种功能也有很多种实现方式，譬如传递某种凭证 HASH、去读取 cookies 文件、程序反过来去执行网页中的脚本函数、直接去内存空间取 session 等等。<br>由于当时握着校内网一堆的 XSS，又猜想凭证最有可能的就是通过 JavaScript 直接在启动程序时传递过去的。心想若能写个 web 蠕虫让用户 A 访问网站后登录用户 B 的校内通，用户 B 又去登录用户 C 的，该有多么混乱，该有多么骚气。<br>于是抽丝剥茧一点点去分析那堆 JS 代码，发现的确是传递了一个凭证过去，而且是以 ajax 请求的方式。这个请求今天回想起来大概是 getuserinfo?uid=643134&amp;version=1.23.456 这样，而返回的凭证则是一段固定的乱码。<br>其中 uid 可以枚举，每个 uid 返回的乱码都不一样，猜想是不同用户的凭证。如果 uid 不变，更改 version，则发现乱码跟着改变。怀疑乱码的加密算法中的变量跟 version 的数值有关。在某一次将 version 值设为 0 后，乱码变成了我的密码明文，于是这个漏洞就此浮现，我拥有了获取所有用户密码的能力，至于什么跨站蠕虫早已经抛之脑后了。<br>通过枚举 uid 判断，用户数量在 3000 万左右，于是当年还写了一个爬虫用单机以 10 个线程去爬密码，三天三夜也只跑了一小部分。后来在做了个常用密码概率分析后，就将漏洞扔给了校内修复去了。<br>且不说在这个漏洞里面，校内犯了多少种错误，也不看技术（漏洞发现的本身就没用什么技术），仅谈运气——若不是有着对女神的热爱，就不会逛校内网，也不会下校内通；若不是有校内的 XSS 和骚气的想法，也不会去看代码找 bug；若不是有着各种胡猜乱蒙，也找不到最终的漏洞。<br>由此可见，运 ren 气 pin 在漏洞挖掘中的重要性！<br>其实要完整回答这个问题，得区分下情况：按是否已在网络上公布，可分为未知的 0day 漏洞、已知的 1day、Nday 漏洞；按照产生原因，又可分为通用类型漏洞、逻辑类型漏洞和社工类型漏洞等。<br>未知漏洞一般采取白盒或黑盒的方式去挖掘，已知漏洞则采取刺探或扫描的方式去发现；通用类型漏洞如溢出、提权、web 漏洞等则采取针对性的黑白盒技巧去挖掘、逻辑类型漏洞则是要揣测和发现程序员在实现业务逻辑中有可能忽略的细节并加以验证和利用，譬如经典的购买数量为负数商品导致的刷钱漏洞、权限验证上的无权、跨权和越权漏洞等等；而社工类型的漏洞则是研究人类活动留下的各种痕迹以及人类心理上的一些弱点最终找到突破限制的方法。<br>总之，具体问题具体分析。每一类漏洞产生的原理都不相同，挖掘和发现的方式也不一样。若是要学习网络安全，建议先搜索下都有哪些类型漏洞，每种漏洞产生的原因和实现上的机理都是什么，这些漏洞要如何发现和利用，这样整体上就会知道如何挖掘了。<br>在如今 SRC 遍布各大公司的今天，希望各位大拿小黑发现漏洞还是要即时上报。友情测试可以，真要拿来利用，可是要负责任滴！<br>原文请参见: <a href="http://daily.zhihu.com/story/9686680" target="_blank" rel="noopener">http://daily.zhihu.com/story/9686680</a> </p>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2018/06/15/谷歌、苹果、抖音的「防沉迷」，不过是一场事先张扬的骗局/" class="pre-post btn btn-default" title='谷歌、苹果、抖音的「防沉迷」，不过是一场事先张扬的骗局'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">谷歌、苹果、抖音的「防沉迷」，不过是一场事先张扬的骗局</span>
+        </a>
+    
+    
+        <a href="/2018/06/15/眼睛干涩，按摩、眼贴还是防蓝光眼镜？最省钱的办法在这里/" class="next-post btn btn-default" title='眼睛干涩，按摩、眼贴还是防蓝光眼镜？最省钱的办法在这里'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">眼睛干涩，按摩、眼贴还是防蓝光眼镜？最省钱的办法在这里</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">Search</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p><b>本站一切内容摘自网络，完全由爬虫自动生成，维护，本站目的为了学以致用，如所发布文章侵犯了您的权益，请联系公众号 TesterTalk.</b> <br/>
+</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/Light07/autoblog.git" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="//www.zhihu.com/people/thinkbig" rel="external nofollow" title="知乎" target="_blank">
+			    	<i class="user fa fa-user"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/今日热点/"><i class="fa" aria-hidden="true">今日热点</i></a><span class="category-list-count">199</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/优秀博客/"><i class="fa" aria-hidden="true">优秀博客</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思维训练/"><i class="fa" aria-hidden="true">思维训练</i></a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度解读/"><i class="fa" aria-hidden="true">深度解读</i></a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科技/"><i class="fa" aria-hidden="true">科技</i></a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/酷软推荐/"><i class="fa" aria-hidden="true">酷软推荐</i></a><span class="category-list-count">24</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">June 2018</i></a><span class="archive-list-count">265</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">May 2018</i></a><span class="archive-list-count">4</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">Tag Cloud</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/卢松松博客/" style="font-size: 18px;">卢松松博客</a> <a href="/tags/小众软件/" style="font-size: 16px;">小众软件</a> <a href="/tags/战隼的学习探索/" style="font-size: 12px;">战隼的学习探索</a> <a href="/tags/知乎日报/" style="font-size: 20px;">知乎日报</a> <a href="/tags/酷-壳-–-CoolShell/" style="font-size: 10px;">酷 壳 – CoolShell</a> <a href="/tags/雷锋网/" style="font-size: 14px;">雷锋网</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.helloqa.com" class="fa" target="_blank">TesterTalk软件测试分享</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>
