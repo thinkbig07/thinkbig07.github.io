@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="TesterTalk --爬虫实践">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://qahome.cn">
+    <!--SEO-->
+
+<meta name="description" content="这是一个由爬虫自动生成并维护的网站。"/>
+
+
+
+<meta name="keywords" content="爬虫， 自动生成的博客。"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>机械臂还能这样玩？Touch &amp; Melt : 抽象触觉和机器人热成型 | TesterTalk --爬虫实践</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="TesterTalk --爬虫实践" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='TesterTalk'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/今日热点/"><i class="fa "></i>今日热点</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/科技/"><i class="fa "></i>科技</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/投资/"><i class="fa "></i>投资</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/酷软推荐/"><i class="fa "></i>酷软推荐</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/深度解读/"><i class="fa "></i>深度解读</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/思维训练/"><i class="fa "></i>思维训练</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/优秀博客/"><i class="fa "></i>优秀博客</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="机械臂还能这样玩？Touch &amp; Melt : 抽象触觉和机器人热成型">
+            
+	            机械臂还能这样玩？Touch &amp; Melt : 抽象触觉和机器人热成型
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/科技">
+            科技
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/雷锋网" title='雷锋网'>
+                        雷锋网
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2018/07/30</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p><strong>雷锋网(公众号：雷锋网)按：本文为 AI 研习社编译的技术博客，原标题 Touch &amp; Melt: Tactile Abstraction and Robotic Heat-Forming，作者为 Varun Gadh 。</strong><br><strong>翻译 | 赵朋飞       校对 |  余杭   整理 | MY</strong><br><br><br>这篇文章最初发表于2018年5月13日，是在卡内基梅隆大学教授的课程的一部分。  <br>是关于的 Varun Gadh 和 Hang Wang 的项目。<br><br><br><strong>摘要</strong><br>触摸和熔化探索了人机协同生产的过程，这一过程中使用了人类固有的技能和功能机器人的技能找到并专注于对象物理表面和物体表面独特纹理及其他相关特征的能力，能够很容易地生成一个复杂的伪任意的移动路径和一个对象——明显是人的能力。在许多形式的制造中，以精确和一致的方式移动的能力是一种绝对属于机器的能力。<br>使用 MoCap（动作捕捉）技术来收集触觉扫描数据（跟随人类末端执行器的路径）, 这种制造方法产生了被扫描物体的形式的抽象版本。这个抽象通过寻找花费时间最多的区域来寻找特定的触觉重要性特征。<br>接下来，这个过程使用一个触摸密度的直方图来生成一个机械手臂需要执行的轮廓。最后，机器人手臂在一个空气加热回流工站操纵一块苯乙烯塑料；它的运动遵循生成的轮廓。由此产生的熔融塑料是对目标物体人类解释的一种抽象表示。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584ebddf5b4.gif" alt=""><br><strong><br></strong><br><strong>目的</strong><br>本项目目的如下：</p>
+<ul>
+<li>观察人类触觉扫描的形式； 什么样的边缘、形式、纹理和触觉其他的重要方面；- 测试这个假设： 使用这个系统扫描同一个物体时，不同的用户会产生不同的输出；- 寻找合适的材料，材料厚度，机器人加热工具，轮廓顺序，温度，气压。<br>测试这个假设： 使用这个系统扫描同一个物体时，不同的用户会产生不同的输出；<br><br><br><strong>过程</strong><br>为方便解释，将采用两个用户扫描单个物体的方式（图片如下）。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584edc57ff9.jpeg" alt=""><br>用户扫描对象物体时（本例中是一个项目创建者的脸），将一个或多个标记传感器安装在手套或手指上（依赖于软件和物理限制）。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584edfa418d.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>MoCap 系统记录扫描并收集3个坐标位置数据。<br><iframe frameborder="\"0\"" width="\"640\"" height="\"498\"" src="\"https://v.qq.com/iframe/player.html?vid=n0735iflzlo&amp;tiny=0&amp;auto=0\"" allowfullscreen="\"\""></iframe><br><br><br>然后，将位置数据导出并通过 Python 脚本解析成 3D 空间中的一组点，以便在 Rhino 中由 Grasshopper  来表示。<br><br><img src="https://v.qq.com/iframe/player.html?vid=n0735iflzlo&amp;tiny=0&amp;auto=0" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f018b483.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>3D 点集被压平在一个平面上并覆上网格，每个区域的点密度被映射到相应的方块，并生成一个表示触摸密度的热图：<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f019398f.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f3e30d7f.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>在这份热图中，绿色-黄色-红色依次表示增加的触摸密度。<br>一旦触摸密度值被映射到点阵中，每个点阵方框被提升到与它所代表的触摸密度值相关的高度，并对凸起部分的表面进行修补。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f4673cd5.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>从这个新的平滑表面，通过在用户设置的时间间隔内对其进行切片来提取一组轮廓（下图）。为了更深入地了解等值线的工作原理，请阅读 Rhino 中的轮廓功能，这两种行为都基于相同的原理）。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f51e0d23.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f6d5f63b.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>这些轮廓线被分解为路径集工机械臂参照：<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f7679c5e.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f85ef005.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>从收集到的数据到机器人路径，这个过程保留了相当多的易辨识性。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f8c49184.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>机械臂引导加热枪下的聚乙烯材料沿着轮廓路径移动。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f966113d.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>一块苯乙烯的原料被安装在机器人的夹子上，机械臂引导加热枪下的聚乙烯材料沿着轮廓路径移动。<br><iframe frameborder="\"0\"" width="\"640\"" height="\"498\"" src="\"https://v.qq.com/iframe/player.html?vid=k07354st9av&amp;tiny=0&amp;auto=0\"" allowfullscreen="\"\""></iframe><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f9e2613f.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://v.qq.com/iframe/player.html?vid=k07354st9av&amp;tiny=0&amp;auto=0" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584fb43a9b7.png?imageMogr2/format/jpg/quality/90" alt=""><br>经过多次测试（塑料有一点烧焦），我们能够找到表达能力和信息保留有效平衡的制造过程！<br>然而，达到这一有效的制造过程并非易事。制造过程中需要测试和探索的一个因素是按顺序排列的轮廓。<br>为了加热，我们想要使材料的 z 轴偏转最大化（为了得到最具生动性和表现力的输出），我们最初认为，我们应该以一种由内到外的顺序来处理同心轮廓。这将使加热枪和随后的轮廓之间的距离最小化。然而，我们了解到，当轮廓相对较近时，内环会受到过多加热，并在材料上形成孔洞，以一种我们认为不太理想的方式来扭曲剩余材料，以保持轮廓信息。因此，我们认为最好的方法是，从外到内移动，减少内部轮廓的受热。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584fb60affd.png?imageMogr2/format/jpg/quality/90" alt=""><br>然而，当我们测试从外到内的顺序时，在材料中，内部轮廓线的位置离加热枪的距离太远，材料无法有效地融化。最后，我们决定按切片的顺序来处理每一层的轮廓。例如，下面的图（1）中的最外层的轮廓将首先被处理。接下来，第二个更小的同心轮廓，即等值的同心度（2）的小轮廓线。随后的圆形轮廓将包括那些标记为（3）的轮廓。依次类推，一直持续到最后一层。这种加热顺序被证明是最有效的，因为它是对那些本应变形的区域的一种有效的平衡，但在一个小地方却没有足够的集中热量导致出现大洞。<br><br><br><strong>输出</strong><br>当不同的用户扫描相同的对象时，结果在路径和触摸密度上都有很大的变化。例如，两名相对不熟悉系统相关技术的志愿者扫描了同一个对象（一个项目成员的脸），并以完全不同的方式进行扫描；速度、主要焦点的特征和扫描目标的变化非常大。如下所示，这些路径在结构上是不同的并且以他们自己的模式重复。<br>在调查哪些物理特征最吸引人时，我们能够收集主要关于人脸的信息，因为这是我们所选择的对象集合。一般来说，鼻尖、鼻边、下巴和较低的前额似乎是最主要的兴趣所在。这似乎是由于这些特征有清晰的轮廓定义。相对不稳定或平坦的地形（如飞机或锯齿状的表面）似乎并没有特别的触觉兴趣，而边缘和相对较长的曲线似乎更容易引起人们的注意。<br>经过各种测试，我们发现最优输出参数如下：</li>
+<li>加热回流工站，温度为 430 摄氏度，90% 的空气压力 - 1/16″ 苯乙烯塑料 - 热喷枪（热空气重做站的末端）距离苯乙烯塑料表面 1.25″ - 5mm/s 移动速度- 一种同心的等高线排序模式（更多信息请参阅过程部分的最后一段）<br>1/16″ 苯乙烯塑料<br>5mm/s 移动速度<br><br><br><strong>致谢</strong><br>感谢 Garth Zeglin 和 Joshua BardWe 教授在整个项目过程中的指导和帮助。同样感谢 Jett Vaultz, Ana Cedillo, Amy Coronado, Felipe Oropeza, Kelly Underwood, Jade Crockem, 以及 Victor Acevedo 贡献了他们宝贵的时间。.<br><br><br>原文链接：<a href="https://medium.com/@vgadh/touchmelt-94510253522d" target="_blank" rel="noopener">https://medium.com/@vgadh/touchmelt-94510253522d</a><br>号外号外~<br>一个专注于<br>AI技术发展和AI工程师成长的求知求职社区<br>诞生啦！<br>欢迎大家访问以下链接或者扫码体验<br><a href="https://club.leiphone.com/page/home" target="_blank" rel="noopener">https://club.leiphone.com/page/home</a><br><br><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584fcab5863.gif" alt=""><br><br><br>雷锋网雷锋网<br>雷锋网原创文章，未经授权禁止转载。详情见<a href="http://dwz.cn/4ErMxZ" target="_blank" rel="noopener">转载须知</a>。<br>7月30日，NOC “全国中小学信息技术创新与实践活动” 乐聚人形机器人任务挑战赛在浙江诸暨隆重举办。大赛由教育部基础教育司、教育部教师工作司支持，中央电化教育馆指导，中国教育技术协会、中国发明协会主办，中国信息技术教育杂志社、创新时代杂志社、诸暨市教育局、诸暨市科学技术协会、诸暨中学教育集团暨阳分校、乐聚（深圳）机器人技术有限公司、乐聚星原力（诸暨）教育科技有限公司承办。中国教育技术协会学术委员会副主任潘克明，诸暨市市委常委、副市长陈仁坚，中国人工智能学会机器人文化专业委员会主任、哈工大多智能体机器人研究中心主任朴松昊、苏州大学机器人与微系统中心副主任、教育部新世纪人才陈立国等专家领导出席了大赛的开幕式。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584fd9987eb.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>图：NOC “全国中小学信息技术创新与实践活动” 乐聚人形机器人任务挑战赛开幕式<br>据悉，NOC（NETWORK ORIGINALITY COMPETITION），即全国中小学（高校）信息技术创新与实践活动，是在教育部、国家知识产权局等有关部门的关怀指导下开展的中国信息技术教育领域最重要的赛事，每年一届，现已成功举办十五届。2018年初，乐聚机器人与NOC（全国中小学信息技术创新与实践活动）组委会签订协议，获得了第16届NOC活动 “乐聚人形机器人任务挑战赛”主题活动的主办权以及第17届、18届NOC活动“ 人形机器人任务挑战赛 ”的唯一协办权，成功将人形机器人赛项打入全国最权威、最具影响力的中小学科创类赛事。近日举办的为第16届NOC活动 “乐聚人形机器人任务挑战赛”主题活动，活动分小学、初中、高中三个组别，有来自全国的1000多名师生参与。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b552f8f06268.png?imageMogr2/format/jpg/quality/90" alt=""><br>图：NOC乐聚人形机器人任务挑战赛现场<br><img src="https://static.leiphone.com/uploads/new/images/20180730/5b5ed6b925342.png?imageView2/0/w/740/h/740" alt=""><br>图：NOC乐聚人形机器人任务挑战赛参赛学生 <img src="https://static.leiphone.com/uploads/new/images/20180730/5b5ed6b809349.png?imageView2/0/w/740/h/740" alt=""><br>图：NOC乐聚人形机器人任务挑战赛开幕式-来自全国的学生代表队入场<br><img src="https://static.leiphone.com/uploads/new/images/20180730/5b5ed6b8494c3.png?imageView2/0/w/740/h/740" alt=""><br>图：NOC乐聚人形机器人任务挑战赛-赛事现场<br><img src="https://static.leiphone.com/uploads/new/images/20180730/5b5ed64a8e87e.png?imageView2/0/w/740/h/740" alt=""><br>图：NOC乐聚人形机器人任务挑战赛-参赛学生在调试机器人<br><img src="https://static.leiphone.com/uploads/new/images/20180730/5b5ed6439049f.png?imageView2/0/w/740/h/740" alt=""><br>图：NOC乐聚人形机器人任务挑战赛-参赛学生在进行赛项比赛<br>近年来，人工智能行业被资本及市场热捧，但能做到让产品落地到具体应用方向，并产生盈利的企业，却少之又少。究其原因，一方面在于大部分企业不具备核心技术竞争力，通过集成的方式无法让产品做到差异化；另一方面，也在于产品在规划定位时，就没有找到用户的深层次需求。<br>乐聚机器人是一家2016年才成立的新兴企业，但却在产品差异化竞争和用户需求上都在走在了人形机器人领域的前列。一方面，乐聚掌握了包括自稳定步态算法、机器人专用舵机、SLAM算法在内的机器人核心技术，推出的Aelos系列人形机器人成为国内首个可实现快走的双足人形机器人，其灵活性、稳定性及在极端环境下的使用能力，使其从国内机器人企业中脱颖而出，作为中国人工智能代表登上2018年平昌冬奥会“北京8分钟”。另一方面，乐聚在2017年9月推出Aelos教育版机器人，迅速响应国务院《新一代人工智能发展规划》中关于在全国开展人工智能教育的号召，打造国内首个具备完善教育体系的机器人编程教育解决方案，抢占国内中小学人工智能教育市场。根据乐聚机器人对外公布的数据来看，他们在Aelos教育机器人推出的3个月时间内，就覆盖了国内17个省市的公立中小学及校外500多个培训点。而此次，乐聚机器人与NOC的合作赛事，则是非常有效的巩固了其在教育市场的拓展，越来越多的学校、学生、家长将会认识并参与到其人工智能编程教育中去。<br><img src="https://static.leiphone.com/uploads/new/images/20180730/5b5ed661c073c.png?imageView2/0/w/740/h/740" alt=""><br>图：浙江行知小学学生在进行人工智能编程教育学习<br>据雷锋网(公众号：雷锋网)记者了解，除NOC外，学生们还可用乐聚Aelos人形机器人参加FIRA机器人足球赛、ROBOCUP青少年机器人世界杯、全国中小学电脑制作活动、全国青少年机器人及人工智能创新大赛、中国机器人及人工智能大赛、中国青少年人工智能及创客大赛等国内外权威赛事。乐聚机器人在赛事上做的广泛布局，将成为其落地中小学人工智能教育的有效助力。<br>雷锋网版权文章，未经授权禁止转载。详情见<a href="http://dwz.cn/4ErMxZ" target="_blank" rel="noopener">转载须知</a>。<br>原文请参见: <a href="https://www.leiphone.com/news/201807/F5qDXZt5CseWgSFB.html?uniqueCode=kzbqfnv6HAuhVNRy" target="_blank" rel="noopener">https://www.leiphone.com/news/201807/F5qDXZt5CseWgSFB.html?uniqueCode=kzbqfnv6HAuhVNRy</a> </li>
+</ul>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2018/07/30/ARM继续加码物联网领域，或将以6亿美元收购数据分析公司Treasure Data/" class="pre-post btn btn-default" title='ARM继续加码物联网领域，或将以6亿美元收购数据分析公司Treasure Data'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">ARM继续加码物联网领域，或将以6亿美元收购数据分析公司Treasure Data</span>
+        </a>
+    
+    
+        <a href="/2018/07/30/使用 Spark, LSH 和 TensorFlow 检测图片相似性/" class="next-post btn btn-default" title='使用 Spark, LSH 和 TensorFlow 检测图片相似性'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">使用 Spark, LSH 和 TensorFlow 检测图片相似性</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">Search</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p><b>本站一切内容摘自网络，完全由爬虫自动生成，维护，本站目的为了学以致用，如所发布文章侵犯了您的权益，请联系公众号 TesterTalk.</b> <br/>
+</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/Light07/autoblog.git" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="//www.zhihu.com/people/thinkbig" rel="external nofollow" title="知乎" target="_blank">
+			    	<i class="user fa fa-user"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/今日热点/"><i class="fa" aria-hidden="true">今日热点</i></a><span class="category-list-count">138</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/优秀博客/"><i class="fa" aria-hidden="true">优秀博客</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思维训练/"><i class="fa" aria-hidden="true">思维训练</i></a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/投资/"><i class="fa" aria-hidden="true">投资</i></a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度解读/"><i class="fa" aria-hidden="true">深度解读</i></a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link current" href="/categories/科技/"><i class="fa" aria-hidden="true">科技</i></a><span class="category-list-count">75</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/酷软推荐/"><i class="fa" aria-hidden="true">酷软推荐</i></a><span class="category-list-count">25</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/"><i class="fa" aria-hidden="true">August 2018</i></a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/"><i class="fa" aria-hidden="true">July 2018</i></a><span class="archive-list-count">222</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">June 2018</i></a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">May 2018</i></a><span class="archive-list-count">3</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">Tag Cloud</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/卢松松博客/" style="font-size: 13.33px;">卢松松博客</a> <a href="/tags/小众软件/" style="font-size: 16.67px;">小众软件</a> <a href="/tags/战隼的学习探索/" style="font-size: 11.67px;">战隼的学习探索</a> <a href="/tags/知乎日报/" style="font-size: 20px;">知乎日报</a> <a href="/tags/酷-壳-–-CoolShell/" style="font-size: 10px;">酷 壳 – CoolShell</a> <a href="/tags/雪球/" style="font-size: 15px;">雪球</a> <a href="/tags/雷锋网/" style="font-size: 18.33px;">雷锋网</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.helloqa.com" class="fa" target="_blank">TesterTalk软件测试分享</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>

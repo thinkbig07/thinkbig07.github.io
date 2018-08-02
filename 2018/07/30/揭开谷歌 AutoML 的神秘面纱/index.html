@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="TesterTalk --爬虫实践">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://qahome.cn">
+    <!--SEO-->
+
+<meta name="description" content="这是一个由爬虫自动生成并维护的网站。"/>
+
+
+
+<meta name="keywords" content="爬虫， 自动生成的博客。"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>揭开谷歌 AutoML 的神秘面纱 | TesterTalk --爬虫实践</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="TesterTalk --爬虫实践" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='TesterTalk'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/今日热点/"><i class="fa "></i>今日热点</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/科技/"><i class="fa "></i>科技</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/投资/"><i class="fa "></i>投资</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/酷软推荐/"><i class="fa "></i>酷软推荐</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/深度解读/"><i class="fa "></i>深度解读</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/思维训练/"><i class="fa "></i>思维训练</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/优秀博客/"><i class="fa "></i>优秀博客</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="揭开谷歌 AutoML 的神秘面纱">
+            
+	            揭开谷歌 AutoML 的神秘面纱
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/科技">
+            科技
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/雷锋网" title='雷锋网'>
+                        雷锋网
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2018/07/30</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>雷锋网(公众号：雷锋网)按：本文由「图普科技」编译自 <a href="http://Google" target="_blank" rel="noopener">Google’s AutoML: Cutting Through the Hype</a><br>在推出AutoML时，谷歌首席执行官Sundar Pichai在博客中写道：“设计神经网络是非常耗时的，其对专业知识的极高要求使得只有小部分科研人员和工程师才能参与设计。这就是我们创建AutoML方法的原因，有了它，神经网络也可以设计神经网络。我们希望AutoML能够拥有现在一些博士拥有的能力，并可以在三到五年内使众多开发人员也能通过 AutoML 设计神经网络，满足其特定的需求。”<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b5eeddf0c2af.png?imageMogr2/format/jpg/quality/90" alt=""><br>谷歌首席执行官Sundar Pichai表示，我们都需要设计自己的神经网络<br>谷歌的人工智能负责人Jeff Dean表示，100倍的计算力可以取代人类机器学习专家，他以需要庞大计算力的神经架构搜索为案例来解释了这一点。（在他的TensorFlow DevSummit大会主旨演讲视频中大约23:50左右）<br>这引发了许多问题的讨论：众多开发人员需要“设计神经网络，满足其特定的需求”（引自Pichai的愿景），或是否有一种行之有效的方法可以使得神经网络可以广泛适用于同一类问题的解决？巨大的计算能力真的可以取代人类机器学习专家吗？<br>在评估谷歌的声明时，应当牢记，如果我们被说服，相信有效使用深度学习技术的关键是提高计算能力，谷歌将从中利益，因为在这一领域，谷歌明显遥遥领先。如果这是真的话，我们可能都需要购买谷歌的产品。就其本身而言，这并不意味着谷歌的说法都是错误的，但很好地了解他们的声明背后隐藏的经济动机是有必要的。<br>在之前的文章中，我介绍了AutoML的历史，解释了什么是神经架构搜索，并指出对于许多机器学习项目，设计或选择架构远不是最困难，最耗时或最痛苦的问题。在今天的帖子中，我想特别关注Google的AutoML本身，这是一个广受关注的产品，并试图解决以下问题：<br>•       什么是AutoML?<br>•       什么是迁移学习?<br>•       神经架构搜索与迁移学习：两种截然相反的方法<br>•       需要更多证据<br>•       为什么谷歌的AutoML备受追捧?<br>•       我们如何解决机器学习专家短缺的问题?</p>
+<h2 id="什么是AutoML？"><a href="#什么是AutoML？" class="headerlink" title="什么是AutoML？"></a><strong>什么是AutoML？</strong></h2><p>尽管AutoML领域已经发展了很多多年（包括开源AutoML库，研讨会，研究，和比赛），但在2017年5月，Google仍将其神经架构搜索称之为AutoML。在谷歌I/O大会上发布的博客声明中，谷歌首席执行官Sundar Pichai写道：“这就是我们创建AutoML方法的原因，有了它，神经网络也可以设计神经网络。”；Google AI研究人员Barret Zoph和Quoc Le写道：“通过我们的方法（我们称之为“AutoML”）中，神经网络控制器可以提出一个“子”模型架构…”<br>Google于2018年1月推出机器学习产品- Cloud AutoML。到目前为止，它只有一个公开可用的服务AutoML Vision，AutoML Vision是一种识别或分类图像中对象的API。根据产品页面的描述，Cloud AutoML Vision依赖于两种核心技术：迁移学习和神经架构搜索。既然我们已经介绍过了神经架构搜索，现在让我们看一下迁移学习，了解一下它与神经架构搜索之间的关系。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b5eede0336ef.png?imageMogr2/format/jpg/quality/90" alt=""><br>关于谷歌的AutoML和神经架构搜索的一小部分的头条新闻<br>注意：Google Cloud AutoML还有一个仍然处于alpha测试状态的拖放式ML产品。我在2个月前申请访问它，但至今还没有收到谷歌的回复。我计划在它发布后开贴写一篇文章。</p>
+<h2 id="什么是迁移学习？"><a href="#什么是迁移学习？" class="headerlink" title="什么是迁移学习？"></a><strong>什么是迁移学习？</strong></h2><p>迁移学习是一种强大的机器学习技术，通过利用已经在类似的大型数据集上训练过的预训练模型，可以让人们使用较小数据集或较低的计算能力获得最先进的结果。因为通过迁移学习方式学习的模型不需要从头学习，所以与不使用迁移学习的模型相比，它通常可以以更少的数据和计算时间达到更高的准确度。<br>迁移学习是我们在整个免费的码农实用深度学习课程中使用的核心技术 - 我们的学生不断地将其应用到生产过程中，无论是在自己的创业公司还是财富500强公司。虽然比起神经架构搜索，迁移学习似乎“不那么吸引人”，但有人已经在利用迁移学习技术实现突破性的学术成果，例如Jeremy Howard 和 Sebastian Ruder将迁移学习应用于NLP，在6个数据集上完成了最佳分类。同时，迁移学习技术也是在OpenAI中该领域进一步研究的基础。<br><strong>神经架构搜索与迁移学习：两种截然相反的方法</strong><br>迁移学习的基本思路是将神经网络架构泛化以解决相似类型的问题：例如，许多图像与其他类型的图像具有相同的基本特征（例如角，圆形，狗脸或轮子）。 相比之下，神经架构搜索解决问题的基本理念恰恰相反：每个数据集都有一个独特的，高度专门化的架构。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b5eedea45a84.png?imageMogr2/format/jpg/quality/90" alt=""><br>来自Matthew Zeiler和Rob Fergus的例子，图像分类器习得的4个特征：角，圆圈，狗脸和轮子<br>当神经架构搜索发现新架构时，你必须从头开始学习该架构的权重，而使用迁移学习方法时，你可以直接使用预先训练的模型的现有权重。从这个意义上说，你不能同时使用神经架构搜索和迁移学习解决同一问题：如果你正在学习一个新的架构，你需要为它训练新的权重; 而如果你通过预训练模型迁移学习，则无法对架构进行任何实质性更改。<br>当然，你可以将迁移学习应用于通过神经架构搜索方法习得的架构（我认为这是一个好主意！）。 这仅需要少数研究人员使用神经架构搜索并将他们找到的模型开源。在可以使用迁移学习解决问题时，没有必要让所有机器学习从业者都使用神经架构搜索方法。 然而，Jeff Dean的主题演讲，Sundar Pichai的博客文章，Google Cloud的宣传材料和媒体报道都表明了相反的观点：每个人都需要能够直接使用神经架构搜索。</p>
+<h2 id="神经架构搜索有哪些好处？"><a href="#神经架构搜索有哪些好处？" class="headerlink" title="神经架构搜索有哪些好处？"></a><strong>神经架构搜索有哪些好处？</strong></h2><p>神经架构搜索有助于寻找新的架构！谷歌的AmoebaNet是通过神经架构搜索学习的，并且fast.ai对此进行了改进，学习进程加快的同时改变了训练过程中图像的尺寸。AmoebaNet已成为在单台机器上训练ImageNet最便宜的方式！<br>AmoebaNet设计时没有考虑具有扩展能力的奖励函数，因此它不能像ResNet一样扩展到多台机器，但是针对不同性质的可很好扩展的神经网络在未来是很有可能被自动学习出来的。</p>
+<h2 id="需要更多证据"><a href="#需要更多证据" class="headerlink" title="需要更多证据"></a><strong>需要更多证据</strong></h2><p>目前还没有证据表明每个数据集最好使用自己的自定义模型建模，而不是微调现有模型。 由于神经结构搜索需要更大的训练集，因此对于较小的数据集来说尤其如此。甚至谷歌自己的一些研究也使用的是可迁移技术，而不是为每个数据集寻找新的架构，例如NASNet（博客文章），它在Cifar10上学习了一个架构模块，然后使用模块为ImageNet创建了一个架构。我还没有听说过任何机器学习比赛获胜者使用的是神经架构搜索。<br>此外，我们不知道谷歌推广的需要计算力的神经架构搜索方法是否具有显著的优越性。 例如，最近有一些论文，如高效神经架构搜索（ENAS）和可微架构搜索（DARTS），提出了更有效的算法。 DARTS仅需4个GPU工作天数就可学会架构，而NASNet则需1800个GPU工作天数，AmoebaNet则为3150个GPU工作天数（都曾在Cifar-10中学习，精确度相同）。 Jeff Dean是ENAS论文的作者，他在论文中提出了一种计算力低1000倍的技术，这似乎与他在一个月后在TF DevSummit大会上强调使用计算力高100倍的方法不一致。</p>
+<h2 id="为什么谷歌的AutoML备受追捧"><a href="#为什么谷歌的AutoML备受追捧" class="headerlink" title="为什么谷歌的AutoML备受追捧?"></a><strong>为什么谷歌的AutoML备受追捧?</strong></h2><p>鉴于上述限制，为什么谷歌AutoML的有用性还没有经过验证（至少到目前为止），就被如此追捧？ 我认为有以下几个原因：</p>
+<ol>
+<li>谷歌的AutoML更加突显了一个营利性公司设立学术性研究实验室可能遭遇的一些风险。在这种环境下，人们很容易围绕有趣的学术研究创造产品，而不评估它们是否满足实际需求。许多人工智能初创企业也正是如此，例如MetaMind或Geometric Intelligence，它们被收购时甚至还没有推出一样产品。我对创业公司创始人的建议是不要直接将你的博士论文投入生产，也不要只招聘学术研究人员。</li>
+<li>谷歌擅长营销。许多门外汉认为人工智能是一个难以接近和令人生畏的领域，他们认为自己没有办法去评估这些声明，特别是像谷歌这样久负盛名的公司所发表的声明。 许多记者也是如此，甚至不加批判地将谷歌的广告宣传写成了炙手可热的文章。 我会定期与那些不从事机器学习领域的人交谈，他们从未使用过任何Google ML产品，对这些产品十分感兴趣，但又说不出什么名堂。<br>举一个谷歌吹捧其成就的误导性报道的典型例子：谷歌人工智能研究人员曾发布了一篇名为“使用深度学习技术来重建真正的人类基因组”的文章，将自己的工作与诺贝尔奖获得者的发现相提并论（狂妄自大！），该文章被Wired选中刊登。然而，约翰斯·霍普金斯大学生物医学工程，计算机科学和生物统计学的杰出教授Steven Salzberg驳斥了谷歌的帖子。 Salzberg指出，这项研究实际上并没有重建人类基因组，而“仅仅是对现有软件的一些改进，甚至可能还没有改进多少。”许多其他基因组学研究人员都赞同Salzberg的观点。<br>谷歌正在进行一些了不起的工作，但如果我们不必筛选如此多的误导性炒作来弄清楚什么是合理的，那么它所做的工作也会更容易得到承认。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b5eedebc0f29.png?imageMogr2/format/jpg/quality/90" alt=""></li>
+<li>如果我们被说服，相信有效使用深度学习技术的关键是提高计算能力，谷歌将从中获益，因为在这一领域，谷歌明显遥遥领先。AutoML通常需要大量的计算，例如要学习AmoebaNet，谷歌需要在450 个K40 GPU上训练7天（相当于3150个GPU工作天数）。<br>虽然工程师和媒体经常痴迷于计算能力或其他一些更庞大的东西，但历史表明，创新往往是在约束和创造力的基础上产生的。 Google使用庞大的计算力处理海量数据; 我们当前生活在资源有限的受约束的世界中，这种方法真的可以泛化以解决我们面临的问题吗？<br>创新是以不同的方式来解决问题，而不是把事情做大。 fast.ai最近在斯坦福大学DAWNBench比赛中取得的成功就证明了这一点。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b5eedefeec73.png?imageMogr2/format/jpg/quality/90" alt=""><h2 id="如何解决机器学习专家短缺的问题？"><a href="#如何解决机器学习专家短缺的问题？" class="headerlink" title="如何解决机器学习专家短缺的问题？"></a><strong>如何解决机器学习专家短缺的问题？</strong></h2>回到Jeff Dean在TensorFlow DevSummit主旨演讲中提出的关于机器学习从业者全球短缺的问题，我们可以另一个角度来解决这个问题。我们可以通过以下几种方法消除使用深度学习技术的最大障碍：</li>
+<li>使深度学习更容易使用</li>
+<li>为深度学习去神秘化</li>
+<li>为资金不足无法使用云GPU的人增加访问权限<h2 id="使深度学习更容易使用"><a href="#使深度学习更容易使用" class="headerlink" title="使深度学习更容易使用"></a><strong>使深度学习更容易使用</strong></h2>研究如何使深度学习更容易使用能够产生巨大的影响，能够更快更简单地训练出更好的网络。 现已成为标准做法的一些发现包括：<br>•       Dropout允许对较小的数据集进行训练而不会过度拟合。<br>•       Batch normalization可以加快训练速度。<br>•       Rectified linear units有助于避免梯度爆炸。<br>一些旨在提高易用性的最新研究包括：<br>•       学习速率查询器使训练过程更加稳定。<br>•       超级收敛可加快训练速度，减少了计算资源。<br>•       现有架构的“Custom heads”可以更轻松地重用架构来解决一系列问题（例如，修改用于分类的ResNet，以便查找边界框或进行样式迁移），<br>以上发现均未涉及计算能力；相反，所有这些都是使用创造性的方式来解决问题。<h2 id="为深度学习去神秘化"><a href="#为深度学习去神秘化" class="headerlink" title="为深度学习去神秘化"></a><strong>为深度学习去神秘化</strong></h2>另一个障碍是许多错误观念让人们相信深度学习不适合他们：错误地认为他们的数据规模太小，他们没有接受正规的教育或没有相关背景，或他们的计算能力不够。很多人相信，只有机器学习领域博士才能够使用深度学习技术，许多公司因无力雇用专家而放弃往这方面发展。然而，事实上，公司不仅可以将他们已有的员工培训为机器学习专家，这甚至是一种更可取的做法，因为你现有的员工已经拥有你从事的领域的专业知识！<br>我认为，对于与我交谈过的绝大多数人来说，进入深度学习的门槛远远低于他们的预期：仅需一年的编码经验和访问GPU的权限。<h2 id="增加访问权限：谷歌-Colab-Notebooks"><a href="#增加访问权限：谷歌-Colab-Notebooks" class="headerlink" title="增加访问权限：谷歌 Colab Notebooks"></a><strong>增加访问权限：谷歌 Colab Notebooks</strong></h2>虽然云GPU（每小时约50美分）的成本在我们许多人的预算范围内，根据我定期与世界各地学生的联系来看，有些学生完全无法承担任何GPU的使用。 在某些国家/地区，即使他们有钱，银行和信用卡方面的规定也会使他们难以使用AWS等服务。谷歌Colab Notebooks是一个解决方案！ Colab Notebooks提供了一个Jupyter笔记本环境，无需设置即可使用，完全在云端运行，并允许用户访问免费GPU（尽管不允许长时间使用GPU）。 它们还可用于创建包含在交互式环境中运行的代码示例的文档。 谷歌Colab Notebooks在实现深度学习大众化方面的作用甚至超过了AutoML; 也许这将成为未来谷歌营销机器的更好选择。<br>相关文章：<br><a href="https://www.leiphone.com/news/201804/ujWi4RWV6m5TOrgr.html" target="_blank" rel="noopener">技术人创业者夏粉：用 AI 创造 AI</a><br><br><a href="https://www.leiphone.com/news/201807/kT8hOtaJUHN26j0W.html" target="_blank" rel="noopener">揭秘 | 谷歌自动化机器学习真的那么神吗？</a><br><br><a href="https://www.leiphone.com/news/201705/s7tCGqoxTQI9mRT3.html" target="_blank" rel="noopener">谷歌大脑撰文解析 AutoML：神经网络如何自行设计神经架构？ | Google I/O 2017</a><br><br>雷锋网版权文章，未经授权禁止转载。详情见<a href="http://dwz.cn/4ErMxZ" target="_blank" rel="noopener">转载须知</a>。<br><strong>雷锋网(公众号：雷锋网)按：本文为 AI 研习社编译的技术博客，原标题 Touch &amp; Melt: Tactile Abstraction and Robotic Heat-Forming，作者为 Varun Gadh 。</strong><br><strong>翻译 | 赵朋飞       校对 |  余杭   整理 | MY</strong><br><br><br>这篇文章最初发表于2018年5月13日，是在卡内基梅隆大学教授的课程的一部分。  <br>是关于的 Varun Gadh 和 Hang Wang 的项目。<br><br><br><strong>摘要</strong><br>触摸和熔化探索了人机协同生产的过程，这一过程中使用了人类固有的技能和功能机器人的技能找到并专注于对象物理表面和物体表面独特纹理及其他相关特征的能力，能够很容易地生成一个复杂的伪任意的移动路径和一个对象——明显是人的能力。在许多形式的制造中，以精确和一致的方式移动的能力是一种绝对属于机器的能力。<br>使用 MoCap（动作捕捉）技术来收集触觉扫描数据（跟随人类末端执行器的路径）, 这种制造方法产生了被扫描物体的形式的抽象版本。这个抽象通过寻找花费时间最多的区域来寻找特定的触觉重要性特征。<br>接下来，这个过程使用一个触摸密度的直方图来生成一个机械手臂需要执行的轮廓。最后，机器人手臂在一个空气加热回流工站操纵一块苯乙烯塑料；它的运动遵循生成的轮廓。由此产生的熔融塑料是对目标物体人类解释的一种抽象表示。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584ebddf5b4.gif" alt=""><br><strong><br></strong><br><strong>目的</strong><br>本项目目的如下：</li>
+</ol>
+<ul>
+<li>观察人类触觉扫描的形式； 什么样的边缘、形式、纹理和触觉其他的重要方面；- 测试这个假设： 使用这个系统扫描同一个物体时，不同的用户会产生不同的输出；- 寻找合适的材料，材料厚度，机器人加热工具，轮廓顺序，温度，气压。<br>测试这个假设： 使用这个系统扫描同一个物体时，不同的用户会产生不同的输出；<br><br><br><strong>过程</strong><br>为方便解释，将采用两个用户扫描单个物体的方式（图片如下）。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584edc57ff9.jpeg" alt=""><br>用户扫描对象物体时（本例中是一个项目创建者的脸），将一个或多个标记传感器安装在手套或手指上（依赖于软件和物理限制）。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584edfa418d.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>MoCap 系统记录扫描并收集3个坐标位置数据。<br><iframe frameborder="\"0\"" width="\"640\"" height="\"498\"" src="\"https://v.qq.com/iframe/player.html?vid=n0735iflzlo&amp;tiny=0&amp;auto=0\"" allowfullscreen="\"\""></iframe><br><br><br>然后，将位置数据导出并通过 Python 脚本解析成 3D 空间中的一组点，以便在 Rhino 中由 Grasshopper  来表示。<br><br><img src="https://v.qq.com/iframe/player.html?vid=n0735iflzlo&amp;tiny=0&amp;auto=0" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f018b483.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>3D 点集被压平在一个平面上并覆上网格，每个区域的点密度被映射到相应的方块，并生成一个表示触摸密度的热图：<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f019398f.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f3e30d7f.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>在这份热图中，绿色-黄色-红色依次表示增加的触摸密度。<br>一旦触摸密度值被映射到点阵中，每个点阵方框被提升到与它所代表的触摸密度值相关的高度，并对凸起部分的表面进行修补。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f4673cd5.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>从这个新的平滑表面，通过在用户设置的时间间隔内对其进行切片来提取一组轮廓（下图）。为了更深入地了解等值线的工作原理，请阅读 Rhino 中的轮廓功能，这两种行为都基于相同的原理）。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f51e0d23.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f6d5f63b.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>这些轮廓线被分解为路径集工机械臂参照：<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f7679c5e.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f85ef005.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>从收集到的数据到机器人路径，这个过程保留了相当多的易辨识性。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f8c49184.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>机械臂引导加热枪下的聚乙烯材料沿着轮廓路径移动。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f966113d.jpg?imageMogr2/format/jpg/quality/90" alt=""><br>一块苯乙烯的原料被安装在机器人的夹子上，机械臂引导加热枪下的聚乙烯材料沿着轮廓路径移动。<br><iframe frameborder="\"0\"" width="\"640\"" height="\"498\"" src="\"https://v.qq.com/iframe/player.html?vid=k07354st9av&amp;tiny=0&amp;auto=0\"" allowfullscreen="\"\""></iframe><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584f9e2613f.jpg?imageMogr2/format/jpg/quality/90" alt=""><br><img src="https://v.qq.com/iframe/player.html?vid=k07354st9av&amp;tiny=0&amp;auto=0" alt=""><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584fb43a9b7.png?imageMogr2/format/jpg/quality/90" alt=""><br>经过多次测试（塑料有一点烧焦），我们能够找到表达能力和信息保留有效平衡的制造过程！<br>然而，达到这一有效的制造过程并非易事。制造过程中需要测试和探索的一个因素是按顺序排列的轮廓。<br>为了加热，我们想要使材料的 z 轴偏转最大化（为了得到最具生动性和表现力的输出），我们最初认为，我们应该以一种由内到外的顺序来处理同心轮廓。这将使加热枪和随后的轮廓之间的距离最小化。然而，我们了解到，当轮廓相对较近时，内环会受到过多加热，并在材料上形成孔洞，以一种我们认为不太理想的方式来扭曲剩余材料，以保持轮廓信息。因此，我们认为最好的方法是，从外到内移动，减少内部轮廓的受热。<br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584fb60affd.png?imageMogr2/format/jpg/quality/90" alt=""><br>然而，当我们测试从外到内的顺序时，在材料中，内部轮廓线的位置离加热枪的距离太远，材料无法有效地融化。最后，我们决定按切片的顺序来处理每一层的轮廓。例如，下面的图（1）中的最外层的轮廓将首先被处理。接下来，第二个更小的同心轮廓，即等值的同心度（2）的小轮廓线。随后的圆形轮廓将包括那些标记为（3）的轮廓。依次类推，一直持续到最后一层。这种加热顺序被证明是最有效的，因为它是对那些本应变形的区域的一种有效的平衡，但在一个小地方却没有足够的集中热量导致出现大洞。<br><br><br><strong>输出</strong><br>当不同的用户扫描相同的对象时，结果在路径和触摸密度上都有很大的变化。例如，两名相对不熟悉系统相关技术的志愿者扫描了同一个对象（一个项目成员的脸），并以完全不同的方式进行扫描；速度、主要焦点的特征和扫描目标的变化非常大。如下所示，这些路径在结构上是不同的并且以他们自己的模式重复。<br>在调查哪些物理特征最吸引人时，我们能够收集主要关于人脸的信息，因为这是我们所选择的对象集合。一般来说，鼻尖、鼻边、下巴和较低的前额似乎是最主要的兴趣所在。这似乎是由于这些特征有清晰的轮廓定义。相对不稳定或平坦的地形（如飞机或锯齿状的表面）似乎并没有特别的触觉兴趣，而边缘和相对较长的曲线似乎更容易引起人们的注意。<br>经过各种测试，我们发现最优输出参数如下：</li>
+<li>加热回流工站，温度为 430 摄氏度，90% 的空气压力 - 1/16″ 苯乙烯塑料 - 热喷枪（热空气重做站的末端）距离苯乙烯塑料表面 1.25″ - 5mm/s 移动速度- 一种同心的等高线排序模式（更多信息请参阅过程部分的最后一段）<br>1/16″ 苯乙烯塑料<br>5mm/s 移动速度<br><br><br><strong>致谢</strong><br>感谢 Garth Zeglin 和 Joshua BardWe 教授在整个项目过程中的指导和帮助。同样感谢 Jett Vaultz, Ana Cedillo, Amy Coronado, Felipe Oropeza, Kelly Underwood, Jade Crockem, 以及 Victor Acevedo 贡献了他们宝贵的时间。.<br><br><br>原文链接：<a href="https://medium.com/@vgadh/touchmelt-94510253522d" target="_blank" rel="noopener">https://medium.com/@vgadh/touchmelt-94510253522d</a><br>号外号外~<br>一个专注于<br>AI技术发展和AI工程师成长的求知求职社区<br>诞生啦！<br>欢迎大家访问以下链接或者扫码体验<br><a href="https://club.leiphone.com/page/home" target="_blank" rel="noopener">https://club.leiphone.com/page/home</a><br><br><br><img src="https://static.leiphone.com/uploads/new/article/740_740/201807/5b584fcab5863.gif" alt=""><br><br><br>雷锋网雷锋网<br>雷锋网原创文章，未经授权禁止转载。详情见<a href="http://dwz.cn/4ErMxZ" target="_blank" rel="noopener">转载须知</a>。<br>原文请参见: <a href="https://www.leiphone.com/news/201807/kzbqfnv6HAuhVNRy.html?uniqueCode=P3lZfmPgckJE8GUD" target="_blank" rel="noopener">https://www.leiphone.com/news/201807/kzbqfnv6HAuhVNRy.html?uniqueCode=P3lZfmPgckJE8GUD</a> </li>
+</ul>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2018/07/30/脱虚向实——Equipment Chain链接实体经济/" class="pre-post btn btn-default" title='脱虚向实——Equipment Chain链接实体经济'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">脱虚向实——Equipment Chain链接实体经济</span>
+        </a>
+    
+    
+        <a href="/2018/07/30/360搜索推出原创图片版权认证平台“图刻” 杀入区块链红海/" class="next-post btn btn-default" title='360搜索推出原创图片版权认证平台“图刻” 杀入区块链红海'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">360搜索推出原创图片版权认证平台“图刻” 杀入区块链红海</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">Search</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p><b>本站一切内容摘自网络，完全由爬虫自动生成，维护，本站目的为了学以致用，如所发布文章侵犯了您的权益，请联系公众号 TesterTalk.</b> <br/>
+</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/Light07/autoblog.git" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="//www.zhihu.com/people/thinkbig" rel="external nofollow" title="知乎" target="_blank">
+			    	<i class="user fa fa-user"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/今日热点/"><i class="fa" aria-hidden="true">今日热点</i></a><span class="category-list-count">138</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/优秀博客/"><i class="fa" aria-hidden="true">优秀博客</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思维训练/"><i class="fa" aria-hidden="true">思维训练</i></a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/投资/"><i class="fa" aria-hidden="true">投资</i></a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度解读/"><i class="fa" aria-hidden="true">深度解读</i></a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link current" href="/categories/科技/"><i class="fa" aria-hidden="true">科技</i></a><span class="category-list-count">75</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/酷软推荐/"><i class="fa" aria-hidden="true">酷软推荐</i></a><span class="category-list-count">25</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/"><i class="fa" aria-hidden="true">August 2018</i></a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/"><i class="fa" aria-hidden="true">July 2018</i></a><span class="archive-list-count">222</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">June 2018</i></a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">May 2018</i></a><span class="archive-list-count">3</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">Tag Cloud</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/卢松松博客/" style="font-size: 13.33px;">卢松松博客</a> <a href="/tags/小众软件/" style="font-size: 16.67px;">小众软件</a> <a href="/tags/战隼的学习探索/" style="font-size: 11.67px;">战隼的学习探索</a> <a href="/tags/知乎日报/" style="font-size: 20px;">知乎日报</a> <a href="/tags/酷-壳-–-CoolShell/" style="font-size: 10px;">酷 壳 – CoolShell</a> <a href="/tags/雪球/" style="font-size: 15px;">雪球</a> <a href="/tags/雷锋网/" style="font-size: 18.33px;">雷锋网</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.helloqa.com" class="fa" target="_blank">TesterTalk软件测试分享</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>
