@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="TesterTalk --爬虫实践">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://qahome.cn">
+    <!--SEO-->
+
+<meta name="description" content="这是一个由爬虫自动生成并维护的网站。"/>
+
+
+
+<meta name="keywords" content="爬虫， 自动生成的博客。"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>腾讯云硬盘出了个匪夷所思的 bug，导致用户数据完全丢失 | TesterTalk --爬虫实践</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="TesterTalk --爬虫实践" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='TesterTalk'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/今日热点/"><i class="fa "></i>今日热点</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/科技/"><i class="fa "></i>科技</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/投资/"><i class="fa "></i>投资</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/酷软推荐/"><i class="fa "></i>酷软推荐</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/深度解读/"><i class="fa "></i>深度解读</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/思维训练/"><i class="fa "></i>思维训练</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/优秀博客/"><i class="fa "></i>优秀博客</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="腾讯云硬盘出了个匪夷所思的 bug，导致用户数据完全丢失">
+            
+	            腾讯云硬盘出了个匪夷所思的 bug，导致用户数据完全丢失
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2018/08/07</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>简而言之：<strong>匪夷所思</strong>。<br>在腾讯云硬盘的官网上多次提到了多机备份，以下为<a href="https://cloud.tencent.com/document/product/362/3039" target="_blank" rel="noopener">文档</a>原话：</p>
+<blockquote>
+<p>在每个存储写入请求返回给用户之前，CBS 就已确保数据已被成功写入三份，且跨机架存储<br>其<a href="http://yunketang-1251520893.cosgz.myqcloud.com/chanpinggonglue/%E4%BA%91%E7%A1%AC%E7%9B%98%E8%AF%A6%E8%A7%A3/5761_01_15485_b.mp4" target="_blank" rel="noopener">教学视频</a>也明确指出了多机备份属性。<br>事后腾讯解释数据丢失是因为一个罕见的硬件固件 bug。硬件问题本身并没有什么特别的，这在大的数据中心是常态而非异常。但问题是三台机器硬件同时触发了 bug 造成数据全部丢失。<br><strong>同一个硬件 bug 搞丢了三台机子上的数据，这可能是 2018 年最锲而不舍的 bug 了。</strong><br>如果腾讯云本身没有宣传有多机备份，那么这家创业公司自己不做备份完全是自己的问题。现在腾讯云在官网上反复宣传强调了多机备份，企业自己不做备份也可以理解(尤其这家公司并不是软件互联网公司)，毕竟在绝大多数场景中三份备份已经完全足够。<br>因为多机备份是分布式系统高可用性保证的重要一环，所以腾讯除了对这家创业公司需要作出解释外，更需要向其所有云用户解释为何其多机备份会同时受到影响。<br><strong>关于公司使用的是否是云硬盘：</strong><br>我写这份答案的时候参考的是云头条发布的文章：<br><a href="https://mp.weixin.qq.com/s/wcjvYpmg45RzlCdV47Cifw" target="_blank" rel="noopener">腾讯云硬盘故障，导致用户「数据完全丢失」</a><br>文内多次提到了是云硬盘的问题，所以我在回答中也都是根据云硬盘的资料。评论中有同学提到这家公司用的是 CVM 本地磁盘没有多机容灾，从这篇文章中我找不到相关的内容。<br><strong>关于副本和备份：</strong><br>有很多同学也提到了副本和备份的问题，认为腾讯提供的是多副本，公司还得自己做备份。<br>我不是专业的 DBA，所以意见不够专业。<br><strong>不过我认为，在有副本的情况下还需要做备份的看法是完全正确的，但是这和现在的问题没有太大关系</strong>。<br>副本的作用是将一份数据拷贝到多台机器，它能够应对的场景有：</p>
+<ol>
+<li>机器故障 。如果是非同步复制的话，可能会有部分数据丢失。但丢失的数据量不会太大，主要取决于网络延迟。</li>
+<li>自动恢复 (在一些系统中当副本数低于一个临界点时，系统会将副本的数据多拷贝几份到其他机器以防止数据完全丢失。当机器恢复时再清理多余的副本)<br>它不能应对的场景有：</li>
+<li>操作错误。比如某 DBA 完成了一波从删库到跑路的操作，那么所有副本的数据都会被删，这种情况下副本没有办法直接恢复数据。</li>
+<li>代码错误。一般副本都是复制最后写入的数据，如果因为代码错误数据在写入前就已经出错，那么副本也无法恢复数据。比如，在一些系统中，一个大的文件会被分割成多个小文件再被写入，如果分割的逻辑有问题，那么所有副本同时都会出错。<br>备份是将现有的数据存储起来，它能应对的场景有：</li>
+<li>机器故障。但是需要手动恢复备份，其丢失的数据比起副本会更多些。丢失的数据量取决于备份周期，从一天到数天不等。</li>
+<li>操作 / 代码错误。(就算 DBA 删库也不慌)<br>它不能应对的场景有：</li>
+<li>自动恢复。一般情况下副本需要在检测到问题后，由运维手动恢复。<br>所以，如果那家公司有备份，那么数据丢失的严重性不会有那么严重，而且公司也应该要防备各种人为或软件的错误。所以我赞同有副本的情况下也得做备份。<br>但是，腾讯给出的解释是硬盘固件 bug。这种情况副本应该足够恢复数据，所以我不认为备份和本次事故有太大关系。<br>原文请参见: <a href="http://daily.zhihu.com/story/9692442" target="_blank" rel="noopener">http://daily.zhihu.com/story/9692442</a> </li>
+</ol>
+</blockquote>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2018/08/07/瞎扯 · 如何正确地吐槽/" class="pre-post btn btn-default" title='瞎扯 · 如何正确地吐槽'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">瞎扯 · 如何正确地吐槽</span>
+        </a>
+    
+    
+        <a href="/2018/08/07/一步都不跑，教会孩子、大人骑自行车/" class="next-post btn btn-default" title='一步都不跑，教会孩子、大人骑自行车'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">一步都不跑，教会孩子、大人骑自行车</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">Search</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p><b>本站一切内容摘自网络，完全由爬虫自动生成，维护，本站目的为了学以致用，如所发布文章侵犯了您的权益，请联系公众号 TesterTalk.</b> <br/>
+</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/Light07/autoblog.git" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="//www.zhihu.com/people/thinkbig" rel="external nofollow" title="知乎" target="_blank">
+			    	<i class="user fa fa-user"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/今日热点/"><i class="fa" aria-hidden="true">今日热点</i></a><span class="category-list-count">183</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/优秀博客/"><i class="fa" aria-hidden="true">优秀博客</i></a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思维训练/"><i class="fa" aria-hidden="true">思维训练</i></a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/投资/"><i class="fa" aria-hidden="true">投资</i></a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度解读/"><i class="fa" aria-hidden="true">深度解读</i></a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link current" href="/categories/科技/"><i class="fa" aria-hidden="true">科技</i></a><span class="category-list-count">82</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/酷软推荐/"><i class="fa" aria-hidden="true">酷软推荐</i></a><span class="category-list-count">32</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/"><i class="fa" aria-hidden="true">August 2018</i></a><span class="archive-list-count">75</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/"><i class="fa" aria-hidden="true">July 2018</i></a><span class="archive-list-count">222</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">June 2018</i></a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">May 2018</i></a><span class="archive-list-count">3</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">Tag Cloud</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/卢松松博客/" style="font-size: 13.33px;">卢松松博客</a> <a href="/tags/小众软件/" style="font-size: 16.67px;">小众软件</a> <a href="/tags/战隼的学习探索/" style="font-size: 11.67px;">战隼的学习探索</a> <a href="/tags/知乎日报/" style="font-size: 20px;">知乎日报</a> <a href="/tags/酷-壳-–-CoolShell/" style="font-size: 10px;">酷 壳 – CoolShell</a> <a href="/tags/雪球/" style="font-size: 15px;">雪球</a> <a href="/tags/雷锋网/" style="font-size: 18.33px;">雷锋网</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.helloqa.com" class="fa" target="_blank">TesterTalk软件测试分享</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>
