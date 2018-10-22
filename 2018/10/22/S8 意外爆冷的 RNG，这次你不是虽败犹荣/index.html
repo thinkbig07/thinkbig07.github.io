@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+	<meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="TesterTalk --爬虫实践">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://qahome.cn">
+    <!--SEO-->
+
+<meta name="description" content="这是一个由爬虫自动生成并维护的网站。"/>
+
+
+
+<meta name="keywords" content="爬虫， 自动生成的博客。"/>
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>S8 意外爆冷的 RNG，这次你不是虽败犹荣 | TesterTalk --爬虫实践</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="TesterTalk --爬虫实践" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?true";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(/img/download.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='TesterTalk'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/今日热点/"><i class="fa "></i>今日热点</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/科技/"><i class="fa "></i>科技</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/酷软推荐/"><i class="fa "></i>酷软推荐</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/思维训练/"><i class="fa "></i>思维训练</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/优秀博客/"><i class="fa "></i>优秀博客</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="S8 意外爆冷的 RNG，这次你不是虽败犹荣">
+            
+	            S8 意外爆冷的 RNG，这次你不是虽败犹荣
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/今日热点">
+            今日热点
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/知乎日报" title='知乎日报'>
+                        知乎日报
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2018/10/22</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <p>在 2018 年 10 月 20 日的八强赛里，IG3：2 了 KT，而 RNG2：3 憾负于 G2，为什么会出现这种结局？<br>实际上就赛后的情况而言，IG 的输还可以理解，但 RNG 的输在选出英雄的时候几乎就可以确定了。<br>就 RNG 几场比赛的 B/P 来看，RNG 输掉比赛不奇怪，赢下才是偶然——且几乎都是依靠个人强悍的实力赢下来的。<br>原因非常简单，头铁不相信版本，就目前的比赛来看，RNG 是说是自信也好，对版本理解出现问题也罢也好，过于相信个人实力，就是 RNG 目前最大的问题。<br>至于所谓的“蓝色”“紫色”方，反而是小问题，因为刚刚 IG 击败 KT 的比赛当中，IG 可是连拿了五场紫色方，并且拿下了其中三场。<br><strong>英雄选择：</strong><br>我们首先来看这十场比赛的 BAN/PICK 相关数据：<br><img src="http://pic2.zhimg.com/70/v2-b63b808f04eda7e9e75848a3668e2589_b.jpg" alt=""><br>看完以后，我们可以发现几个很有趣的事情。</p>
+<ol>
+<li><strong>对线强、前期打架又猛</strong>的妖姬、塔姆、刀妹，<strong>胜率是 100%</strong>。</li>
+<li>对线较弱、需要时间发育的英雄，胜率偏低。</li>
+<li>并<strong>不是单纯的打架，就能取得成功</strong>，例如赵信、卢锡安等英雄就是如此。</li>
+<li>今天的所谓“全球打架”胜率惨淡，<strong>加里奥和慎都遭重</strong>了。<br>这说明了什么呢？<br><strong><strong>一、当前版本线权＞一切</strong></strong><br>这个版本最重要的英雄选择是什么？不是强度高的，也不是推线快的，而是在强度和推线这两方面都要相当不错的英雄，如果仅有推线，例如<strong>发条、大眼之流</strong>反而很可能被<strong>直接干掉</strong>。<br>而如果<strong>仅仅只有打架强</strong>一样优势，就会在<strong>线上被推</strong>的生活不能自理。<br><img src="http://pic1.zhimg.com/70/v2-1b46e828b8b97a6edd652d7725569eb4_b.jpg" alt=""><br>例如 RNG 对 G2 的第四场，虽然<strong>RNG 阵容打架很明显不算差</strong>，尤其是<strong>小规模团战中几乎是横扫 G2</strong>阵容，但因为交换对线，<strong>RNG 在线上就被活活推输</strong>比赛。<br>线权意味着什么？线权意味着打野能前期入侵敌方野区，意味着<strong>打野能永远快一步</strong>到线上打架，<strong>同时意味着可以抢到峡谷先锋</strong>，能拿下小龙。<br>在当前版本，峡谷先锋又基本上等于一座塔。<br>所以<strong>线权就=前期经济优势 + 前期打架转线速度 + 小龙和峡谷先锋 + 一塔</strong>。<br>而如果你能在前期占到优势并且打架打赢，拿下了峡谷先锋控住野区和一塔，那怎么可能会失败呢？<br><img src="http://pic4.zhimg.com/70/v2-fcb1daa18e5bd2c3d5bb1383be296987_b.jpg" alt=""><br>而我们看看 RNG 和 IG 输掉的这几场比赛，其中尤其是以 RNG 输给 G2 的第四场为例，这场比赛 RNG 在中上两路被压死了线，直接后果就是岩雀在本场比赛毫无发挥，而中上被压制，打野没作为，RNG 等于是在二打五，输掉这场比赛自然也就不奇怪了。<br>在 20 分钟的时候，仅中上野被压刀数加起来就超过了 100 刀，这些刀就是 2000 块经济了。<br>输掉比赛，很奇怪吗？<br><strong><strong>二、所谓的“全球打架”英雄，是扩大线权的利器，也是队伍没有线权时期的累赘。</strong></strong><br>所谓的“全球打架”英雄，就是<strong>指当前版本四大全球 / 半球流英雄</strong>，即塔姆、慎、梦魇和加里奥。<br>这四个英雄的特点就是，<strong>顺风无敌，逆风毫无翻盘点</strong>。原因非常简单，这<strong>几个英雄都是需要在有线权的情况下，配合队伍在进攻的时候打开局面</strong>，如果队伍没有线权，那么这几个英雄最好的结果也就是能和对面五五开，<strong>大多数情况下甚至会出现飞人送死</strong>的情况。<br>简单地说，<strong>这几个英雄，实际上是一个陷阱，所谓的“打架陷阱”</strong>。<br>如果没有线权，这几个英雄就没有任何作用。<br>举几个例子。<br>RNG vs G2 的比赛中。<br><strong>RNG 第二场拿出的慎，第四场拿出的加里奥，第五场拿出的梦魇</strong>。<br><img src="http://pic1.zhimg.com/70/v2-4dc2af6ac3366aca43a328f9d2d8a0f8_b.jpg" alt=""><br>IG vs KT 的比赛中。<br><strong>KT 第一场拿出的慎、加里奥</strong>。<br><img src="http://pic2.zhimg.com/70/v2-2e336bed8973f22b36b94e7bb93d43ed_b.jpg" alt=""><br>这其中<strong>认识很清楚的队伍是 IG 和 KT、G2</strong>，这三个队伍<strong>都没有落入“打架陷阱”</strong>当中，IG、KT 和 G2 在后面比赛的 BP 当中，<strong>根本没有在无法保证线权的情况下选择这种打架英雄</strong>，在对方没有 BAN 和抢的情况下，<strong>即使自己非常擅长也不会</strong>选择。<br>这一点，在 IG 和 KT 的 BAN/PICK 中被体现的淋漓尽致，除了实在太适合阵容或者其他两路有线权，<strong>两边中单宁愿选择不那么顺手的丽桑卓和乌鸦</strong>，也不会选择加里奥。<br>同样，在第一盘失利后，<strong>两边同时放弃了慎，并且根本没有考虑过除了塞恩（注：塞恩是推线最快的上单之一）以外的坦克上单</strong>。<br><img src="http://pic2.zhimg.com/70/v2-6c7e807d0ac32d4aa0ce78faef2f3e81_b.jpg" alt=""><br>相对的，<strong>RNG 却选了一局慎和两局波比</strong>，即使赢下了一局比赛问题也很大。<br><strong><strong>三、当前版本必须选择多核体系</strong></strong><br>这个版本，<strong>单核是没有任何希望的</strong>，这个单核并不是说打四保一，而是<strong>说在英雄选择以及战术执行上倾向于某一路</strong>。<br>这一点最突出的有两个队，<strong>首先就是 KT，其次就是 RNG</strong>，而 IG 和 EDG 也犯过类似的错误，不过两队在随后就迅速调整了。<br><img src="http://pic2.zhimg.com/70/v2-d6ad2226c92f6ca6c55186beff8ee999_b.jpg" alt=""><br><img src="http://pic2.zhimg.com/70/v2-2c9cc91e41fed31e58d249bebdec6f31_b.jpg" alt=""><br><strong>KT 在体系上几乎全部依靠于下路 Deft 的发挥，而 RNG 同样非常依靠下路 UZI 的发挥</strong>。<br>EDG 和 IG 在体系选择上都犯过类似的错误，即拿出剑姬，尝试四一分推，<strong>而这个体系，同样是一个非常极端的单核体系</strong>，四一分推，<strong>就是变相的四保一体系</strong>，即以正面的四，来保侧面推进的一。<br><img src="http://pic4.zhimg.com/70/v2-2ba64ebfa77ca81d95b2e02d6a3aebdb_b.jpg" alt=""><br>但单核体系的问题就在于，<strong>当前版本是一个极端保证线权的版本，这个线权不仅仅是对线期的线权，也有中后期的兵线</strong>，而四一分推如果疯狂倾向于单核一旦出现劣势就会非常难受。<br>例如 EDG 打 INF 的剑姬、酒桶、加里奥、卡莎、女坦阵容。<br>这个<strong>阵容几乎就是全部依赖于剑姬，</strong>酒桶作用是防止正面强开，<strong>加里奥是配合剑姬冲脸</strong>，而卡<strong>莎和女坦则是保证能够在开团时候让对面迅速减员</strong>，这个阵容几乎是<strong>一个完全依赖剑姬的单核体系</strong>，一旦出事输掉就非常正常了。<br><img src="http://pic1.zhimg.com/70/v2-5811476dbfa84f5520028f146943147c_b.jpg" alt=""><br>而 IG 和 KT 的第三场比赛中，虽然选出了可以打一三一分推的丽桑卓，<strong>但后期第一是没有贯彻一三一分推的战术，并且被对方沙皇强行立塔拖时间</strong>，导致这场比赛没有迅速结束。<br>虽然理论上来说，一三一分推是双核体系，但保险起见，最好不要拿，一旦战术贯彻失败，在这个版本单核体系几乎等于死亡。<br>同样，对于 KT 和 RNG 这种单核队伍来说（至少在本次世界赛没有打出第二个核）一旦被找出针对方法，也不是无懈可击的。<br><strong>总结</strong><br>当前版本，是一个线权的版本，简单地说就是个人实力 + 英雄选择，英雄选择一定要推线快且前期能够打出足够效果，其次就是队员个人实力一定要能撑得起体系的打法。<br>也就是说，个人实力、英雄选择、战术体系三点必须全部具备，才能拿下比赛。<br>其次，在 BO5 中的调整能力也是至关重要的。<br>就小组赛来看，<strong>调整能力 EDG 最快，RNG 次之，IG 最慢，而到了番战里，IG 调整能力变得迅速无比，一场比赛就成功扭转了打法</strong>，而 RNG 反而调整速度巨慢无比，五场比赛几乎用了同一个体系。<br>现在的 RNG 的失败无疑再次为明天的 EDG 敲响了警钟——必须坚持自己小组赛和冒泡赛的谨慎打法，<strong>即使对手是 MAD、INF 也要稳中取胜，不能再犯之前打 TL 以及 INF 的错误</strong>。<br>恭喜今天取得胜利的 IG 战队和 G2 战队。<br>最后，祝 IG 和 EDG 走的更远。<br>原文请参见: <a href="http://daily.zhihu.com/story/9699090" target="_blank" rel="noopener">http://daily.zhihu.com/story/9699090</a> </li>
+</ol>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2018/10/22/本周热门精选 · 惊变 2018/" class="pre-post btn btn-default" title='本周热门精选 · 惊变 2018'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">本周热门精选 · 惊变 2018</span>
+        </a>
+    
+    
+        <a href="/2018/10/22/大误 · 朱元璋：我不是，我没有，别瞎说啊/" class="next-post btn btn-default" title='大误 · 朱元璋：我不是，我没有，别瞎说啊'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">大误 · 朱元璋：我不是，我没有，别瞎说啊</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">Search</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p><b>本站一切内容摘自网络，完全由爬虫自动生成，维护，本站目的为了学以致用，如所发布文章侵犯了您的权益，请联系公众号 TesterTalk.</b> <br/>
+</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/Light07/autoblog.git" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="//www.zhihu.com/people/thinkbig" rel="external nofollow" title="知乎" target="_blank">
+			    	<i class="user fa fa-user"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Categories</h3>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/今日热点/"><i class="fa" aria-hidden="true">今日热点</i></a><span class="category-list-count">74</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/优秀博客/"><i class="fa" aria-hidden="true">优秀博客</i></a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思维训练/"><i class="fa" aria-hidden="true">思维训练</i></a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/投资/"><i class="fa" aria-hidden="true">投资</i></a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/科技/"><i class="fa" aria-hidden="true">科技</i></a><span class="category-list-count">31</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/酷软推荐/"><i class="fa" aria-hidden="true">酷软推荐</i></a><span class="category-list-count">2</span></li></ul>
+    </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/"><i class="fa" aria-hidden="true">October 2018</i></a><span class="archive-list-count">106</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/"><i class="fa" aria-hidden="true">August 2018</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">June 2018</i></a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">May 2018</i></a><span class="archive-list-count">3</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">Tag Cloud</h3>
+    <div class="content tag-cloud">
+        <a href="/tags/小众软件/" style="font-size: 12px;">小众软件</a> <a href="/tags/战隼的学习探索/" style="font-size: 14px;">战隼的学习探索</a> <a href="/tags/爱范儿-·-Beats-of-Bits/" style="font-size: 18px;">爱范儿 · Beats of Bits</a> <a href="/tags/知乎日报/" style="font-size: 20px;">知乎日报</a> <a href="/tags/酷-壳-–-CoolShell/" style="font-size: 10px;">酷 壳 – CoolShell</a> <a href="/tags/雪球/" style="font-size: 16px;">雪球</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.helloqa.com" class="fa" target="_blank">TesterTalk软件测试分享</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2018
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/js/search.js?rev=@@hash"></script>
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>
